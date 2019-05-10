@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tippie</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>Pay Your Bill With Tippie!</h1>
+    <form class="tip-calc" action="index.html" method="post">
+      <div class="container">
+        <label for="bill-amount">Enter Bill Amount: </label>
+        <input class="fill" id="bill-amount" type="text" name="" placeholder="enter amount">
+      </div>
+      <div class="container">
+        <label for="tip-pct">Tip Percentage</label>
+        <select class="fill" id="tip-pct" class="tip-percent" name="">
+          <option value=".10">10%</option>
+          <option value=".15">15%</option>
+          <option value=".20">20%</option>
+          <option value=".25">25%</option>
+          <option value=".30">30%</option>
+        </select>
+      </div>
+      <div class="container">
+        <label for="split">Divide between how many people?</label>
+        <input class="fill" id="split" type="number" name="" placeholder="# of people">
+      </div>
+
+      <button id="submitBtn" type="button" name="button">Calculate</button>
+      <div class="result">
+        <p>$<span id="tip">0.00</span> each.</p>
+      </div>
+
+    </form>
+
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
